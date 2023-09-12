@@ -1,0 +1,49 @@
+.promo {
+  width: 100%;
+  min-height: 524px;
+  background-color: rgba(7, 48, 66, 1);
+  background-image: url(../../images/practicum-logo.svg);
+  background-position: center 82px;
+  background-repeat: no-repeat;
+  background-size: 320px 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.promo__title {
+  width: 57%;
+  margin: 0;
+  padding: 184px 275px 224px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px) {
+  .promo {
+    background-position-y: 224px;
+  }
+
+  .promo__title {
+    width: 95%;
+    padding: 326px 19px 342px;
+  }
+}
+
+@media (max-width: 400px) {
+  .promo {
+    background-position-y: 142px;
+    background-size: 248px 248px;
+  }
+
+  .promo__title {
+    width: 94%;
+    padding: 207px 10px 246px;
+    font-size: 31px;
+    line-height: 39px;
+  }
+}

@@ -1,0 +1,121 @@
+.burger__button {
+  display: none;
+  margin: 15px 30px 15px 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-image: url('../../images/burger-icon.svg');
+  background-color: transparent;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.burger__overlay {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.5s linear;
+  z-index: 1;
+}
+
+.burger__overlay_type_open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.burger__popup {
+  display: none;
+  min-width: 520px;
+  padding-top: 159px;
+  padding-bottom: 90px;
+  background-color: rgb(32, 32, 32);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger__popup_type_open {
+  display: flex;
+}
+
+.burger__close-button {
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('../../images/burger-close-button.svg');
+  background-color: transparent;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+.burger__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger__link {
+  margin-top: 26px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.burger__link:first-child {
+  margin-top: 0;
+}
+
+.burger__link_type_active {
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+  .burger__button {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .burger__popup {
+    min-width: 320px;
+    padding-top: 144px;
+    padding-bottom: 46px;
+  }
+
+  .burger__close-button {
+    top: 16px;
+    right: 16px;
+  }
+
+  .burger__link {
+    margin-top: 23px;
+  }
+
+  .burger__link_type_active {
+    padding-bottom: 3px;
+  }
+
+  .burger__button {
+    margin: 15px 14px 16px 0;
+    width: 40px;
+    height: 43px;
+  }
+}
