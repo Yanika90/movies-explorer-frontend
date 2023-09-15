@@ -4,7 +4,7 @@
 }
 
 .logo_type_main {
-  padding: 17px 0 17px 70px;
+  padding: 17px 0;
 }
 
 .logo_type_auth {
@@ -15,17 +15,7 @@
   background-size: cover;
 }
 
-@media (max-width: 800px) {
-  .logo_type_main {
-    padding-left: 30px;
-  }
-}
-
 @media (max-width: 400px) {
-  .logo_type_main {
-    padding-left: 14px;
-  }
-
   .logo_type_auth {
     padding-bottom: 50px;
   }

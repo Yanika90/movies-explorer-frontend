@@ -3,9 +3,15 @@ import './MoreMoviesButton.css';
 
 function MoreMoviesButton() {
   return (
-    <button className='more-button button' aria-label='Загрузить ещё фильмы' type='button'>
-      Ещё
-    </button>
+    <section className='more-movies'>
+      <button
+        className='more-movies__button button'
+        aria-label='Загрузить ещё фильмы'
+        type='button'
+      >
+        Ещё
+      </button>
+    </section>
   );
 }
 

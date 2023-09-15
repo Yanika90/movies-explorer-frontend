@@ -1,6 +1,15 @@
 .data-access {
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(32, 32, 32, 1);
+  color: rgb(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.data-access__box {
   max-width: 396px;
-  margin: 70px auto;
+  padding: 70px 0;
   display: flex;
   flex-direction: column;
 }
@@ -129,15 +138,16 @@
 }
 
 @media (max-width: 800px) {
-  .data-access {
-    margin: 232px auto;
+  .data-access__box {
+    max-width: 396px;
+    padding-top: 232px 0;
   }
 }
 
 @media (max-width: 400px) {
-  .data-access {
-    margin: 56px auto 30px;
+  .data-access__box {
     max-width: 260px;
+    padding: 56px 0 30px;
     align-items: center;
   }
 

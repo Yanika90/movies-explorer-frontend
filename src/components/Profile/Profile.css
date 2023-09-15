@@ -1,11 +1,20 @@
 .profile {
-  width: 100%;
-  margin: 74px auto 70px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(32, 32, 32, 1);
+  color: rgb(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.profile__box {
+  width: 32%;
+  padding: 74px 0 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgba(255, 255, 255, 1);
 }
+
 .profile__header {
   margin: 0;
   padding-bottom: 123px;
@@ -17,7 +26,7 @@
 }
 
 .profile__form {
-  width: 410px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -35,10 +44,12 @@
   text-align: left;
   border-bottom: 1px solid rgba(66, 66, 66, 1);
 }
+
 .profile__label:last-of-type {
   border: 0;
   padding: 0;
 }
+
 .profile__input {
   width: 50%;
   padding: 0;
@@ -79,7 +90,7 @@
 }
 
 .profile__buttons {
-  width: 410px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,6 +99,7 @@
 .profile__buttons_type_hide {
   display: none;
 }
+
 .profile__edit-button {
   margin-top: 201px;
   margin-bottom: 16px;
@@ -100,6 +112,7 @@
   line-height: 16px;
   text-align: center;
 }
+
 .profile__edit-button:focus {
   padding: 0 60px;
   outline: 1px solid rgba(61, 220, 132, 1);
@@ -114,6 +127,7 @@
   line-height: 16px;
   text-decoration: none;
 }
+
 .profile__logout-link:focus {
   padding: 0 48px;
   outline: 1px solid rgb(238, 52, 101);
@@ -150,10 +164,12 @@
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
+
 .profile__save-button:focus {
   outline: 1px solid rgba(61, 220, 132, 1);
   outline-offset: 3px rgba(255, 255, 255, 1);
 }
+
 .profile__save-button_type_disabled {
   background-color: rgba(248, 248, 248, 1);
   color: rgba(194, 194, 194, 1);
@@ -166,8 +182,9 @@
 }
 
 @media (max-width: 800px) {
-  .profile {
-    margin: 236px auto 269px;
+  .profile__box {
+    width: 54%;
+    padding: 236px 0 269px;
   }
 
   .profile__header {
@@ -184,16 +201,13 @@
 }
 
 @media (max-width: 400px) {
-  .profile {
-    margin: 70px auto 40px;
+  .profile__box {
+    width: 81%;
+    padding: 70px 0 40px;
   }
 
   .profile__header {
     padding-bottom: 80px;
-  }
-
-  .profile__form {
-    width: 260px;
   }
 
   .profile__edit-button {

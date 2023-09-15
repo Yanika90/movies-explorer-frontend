@@ -1,20 +1,20 @@
 .footer {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0;
+  margin: 0 auto;
   background-color: rgba(32, 32, 32, 1);
   color: rgb(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  width: 89%;
+  padding: 79px 0 20px;
   display: flex;
   flex-direction: column;
 }
 
-.footer__container {
-  padding: 79px 70px 20px;
-}
-
 .footer__header {
   margin: 0;
-  max-width: 1140px;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
@@ -65,15 +65,13 @@
 
 @media (max-width: 800px) {
   .footer__container {
-    padding-right: 30px;
-    padding-left: 30px;
+    width: 92%;
   }
 }
 
 @media (max-width: 400px) {
   .footer__container {
-    padding-right: 10px;
-    padding-left: 10px;
+    width: 94%;
   }
 
   .footer__header {

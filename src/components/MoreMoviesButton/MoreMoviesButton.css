@@ -1,5 +1,12 @@
-.more-button {
-  margin: 50px auto 80px;
+.more-movies {
+  margin: 0 auto;
+  padding: 50px 0 80px;
+  background-color: rgba(32, 32, 32, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.more-movies__button {
   width: 89%;
   height: 36px;
   background-color: rgba(47, 47, 47, 1);
@@ -13,13 +20,17 @@
 }
 
 @media (max-width: 800px) {
-  .more-button {
+  .more-movies {
+    padding: 50px 0 80px;
+  }
+
+  .more-movies__button {
     width: 92%;
   }
 }
 
 @media (max-width: 400px) {
-  .more-button {
+  .more-movies__button {
     width: 94%;
   }
 }

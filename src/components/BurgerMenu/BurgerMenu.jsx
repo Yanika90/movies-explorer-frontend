@@ -12,33 +12,46 @@ function BurgerMenu() {
   }
 
   function setLinkClass(path) {
-    return location.pathname === path ? 'burger__link_type_active' : '';
+    return location.pathname === path
+      ? 'navigation__burger-link navigation__burger-link_type_active'
+      : '';
   }
 
   return (
     <>
       <button
-        className='burger__button button'
+        className='navigation__burger-button button'
         onClick={handleClick}
         aria-label='Кнопка открытия меню'
         type='button'
       ></button>
-      <div className={`burger__overlay ${isOpen ? 'burger__overlay_type_open' : ''}`}>
-        <div className={`burger__popup ${isOpen ? 'burger__popup_type_open' : ''}`}>
+      <div
+        className={`navigation__burger-overlay ${
+          isOpen ? 'navigation__burger-overlay_type_open' : ''
+        }`}
+      >
+        <div
+          className={`navigation__burger-popup ${
+            isOpen ? 'navigation__burger-popup_type_open' : ''
+          }`}
+        >
           <button
-            className='burger__close-button button'
+            className='navigation__burger-close-button button'
             onClick={handleClick}
             aria-label='Кнопка закрытия меню'
             type='button'
           ></button>
-          <nav className='burger__links link'>
-            <Link to='/' className={`burger__link ${setLinkClass('/')}`}>
+          <nav className='navigation__burger-links link'>
+            <Link to='/' className={`navigation__burger-link ${setLinkClass('/')}`}>
               Главная
             </Link>
-            <Link to='/movies' className={`burger__link ${setLinkClass('/movies')}`}>
+            <Link to='/movies' className={`navigation__burger-link ${setLinkClass('/movies')}`}>
               Фильмы
             </Link>
-            <Link to='/saved-movies' className={`burger__link ${setLinkClass('/saved-movies')}`}>
+            <Link
+              to='/saved-movies'
+              className={`navigation__burger-link ${setLinkClass('/saved-movies')}`}
+            >
               Сохранённые фильмы
             </Link>
           </nav>

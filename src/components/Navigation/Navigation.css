@@ -1,5 +1,5 @@
 .navigation {
-  width: 100%;
+  width: 89%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -8,14 +8,12 @@
 }
 
 .navigation__guests {
-  margin-right: 70px;
   display: flex;
   gap: 30px;
 }
 
 .navigation__users {
-  width: calc(100% - 223px);
-  margin-right: 70px;
+  width: 93%;
   display: flex;
   justify-content: space-between;
 }
@@ -63,11 +61,12 @@
 }
 
 @media (max-width: 800px) {
-  .navigation__guests {
-    margin-right: 30px;
+  .navigation {
+    width: 92%;
   }
 
   .navigation__users {
+    width: 67%;
     visibility: hidden;
   }
 
@@ -79,7 +78,6 @@
 
 @media (max-width: 400px) {
   .navigation__guests {
-    margin-right: 14px;
     gap: 14px;
   }
 

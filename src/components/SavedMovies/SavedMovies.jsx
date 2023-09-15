@@ -10,14 +10,14 @@ function SavedMovies() {
   return (
     <>
       <Header />
-      <main className='movies'>
+      <main>
         <SearchForm />
         <MoviesCardList>
           <MoviesCard />
           <MoviesCard />
           <MoviesCard />
         </MoviesCardList>
-        <div className='movies__divider'></div>
+        <div className='page__divider'></div>
       </main>
       <Footer />
     </>

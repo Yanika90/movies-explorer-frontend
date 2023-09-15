@@ -13,18 +13,16 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
-    <div className='App'>
-      <div className='page'>
-        <Routes>
-          <Route path='/' element={<Main isLoggedIn={isLoggedIn} />} />
-          <Route exact path='/movies' element={<Movies />} />
-          <Route exact path='/saved-movies' element={<SavedMovies />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route exact path='/signup' element={<Register />} />
-          <Route exact path='/signin' element={<Login />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-      </div>
+    <div className='page'>
+      <Routes>
+        <Route path='/' element={<Main isLoggedIn={isLoggedIn} />} />
+        <Route exact path='/movies' element={<Movies />} />
+        <Route exact path='/saved-movies' element={<SavedMovies />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route exact path='/signup' element={<Register />} />
+        <Route exact path='/signin' element={<Login />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

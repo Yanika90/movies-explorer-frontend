@@ -1,13 +1,17 @@
 .about-project {
+  margin: 0 auto;
   background-color: rgba(32, 32, 32, 1);
   color: rgb(255, 255, 255, 1);
-  padding: 110px 70px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.about-project__box {
+  width: 89%;
+  padding: 110px 0px;
 }
 
 .about-project__header {
-  max-width: 1140px;
   margin: 0;
   padding-bottom: 24px;
   font-size: 22px;
@@ -19,14 +23,13 @@
 }
 
 .about-project__container {
-  max-width: 1140px;
   display: flex;
   gap: 40px;
   padding: 70px 0 110px;
 }
 
 .about-project__info {
-  max-width: 550px;
+  width: 48%;
 }
 
 .about-project__title {
@@ -48,17 +51,16 @@
 }
 
 .about-project__timeline {
-  max-width: 1140px;
   display: flex;
   justify-content: center;
 }
 
 .about-project__back {
-  width: 228px;
+  width: 20%;
 }
 
 .about-project__front {
-  width: 912px;
+  width: 80%;
 }
 
 .about-project__weeks {
@@ -90,22 +92,14 @@
 }
 
 @media (max-width: 800px) {
-  .about-project {
-    padding: 90px 50px;
-  }
-
-  .about-project__header {
-    max-width: 668px;
+  .about-project__box {
+    width: 87%;
+    padding: 90px 0;
   }
 
   .about-project__container {
-    max-width: 668px;
     gap: 30px;
     padding: 70px 0 93px;
-  }
-
-  .about-project__info {
-    max-width: 319px;
   }
 
   .about-project__title {
@@ -117,26 +111,22 @@
     line-height: 18px;
   }
 
-  .about-project__timeline {
-    max-width: 668px;
-  }
-
   .about-project__back {
-    width: 140px;
+    width: 21%;
   }
 
   .about-project__front {
-    width: 528px;
+    width: 79%;
   }
 }
 
 @media (max-width: 400px) {
-  .about-project {
-    padding: 70px 18px;
+  .about-project__box {
+    width: 89%;
+    padding: 70px 0;
   }
 
   .about-project__header {
-    max-width: 284px;
     padding-bottom: 28px;
     font-size: 18px;
     line-height: 22px;
@@ -145,11 +135,13 @@
   .about-project__container {
     display: flex;
     flex-direction: column;
-    max-width: 284px;
     gap: 56px;
     padding: 60px 0;
   }
 
+  .about-project__info {
+    width: 100%;
+  }
   .about-project__title {
     padding-bottom: 16px;
     font-size: 18px;
@@ -160,17 +152,13 @@
     font-size: 11px;
     line-height: 16px;
   }
-
-  .about-project__timeline {
-    max-width: 284px;
-  }
-
   .about-project__back {
     width: 100px;
+    width: 36%;
   }
 
   .about-project__front {
-    width: 184px;
+    width: 64%;
   }
 
   .about-project__weeks {

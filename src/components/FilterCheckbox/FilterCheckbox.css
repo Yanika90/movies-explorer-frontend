@@ -20,7 +20,7 @@
 .checkbox__slider {
   width: 36px;
   height: 20px;
-  background-color: rgba(235, 235, 235, 1);
+  background-color: rgba(52, 52, 52, 1);
   border-radius: 20px;
   position: absolute;
   top: 0;
@@ -32,7 +32,7 @@
   content: '';
   width: 16px;
   height: 16px;
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgba(160, 160, 160, 1);
   border-radius: 20px;
   position: absolute;
   top: 2px;

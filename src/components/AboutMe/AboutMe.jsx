@@ -6,25 +6,32 @@ import StudentPhoto from '../../images/student-photo.jpg';
 function AboutMe() {
   return (
     <section className='about-me' id='about-me'>
-      <h2 className='about-me__header'>Студент</h2>
-      <div className='about-me__container'>
-        <div className='about-me__info-box'>
-          <h3 className='about-me__name'>Яна</h3>
-          <p className='about-me__job'>Фронтенд-разработчик, 32&nbsp;года</p>
-          <p className='about-me__info'>
-            Я&nbsp;родилась и&nbsp;живу в&nbsp;Саратове, закончила факультет экономики СГУ.
-            У&nbsp;меня есть муж и&nbsp;дочь. Я&nbsp;люблю слушать музыку, а&nbsp;ещё увлекаюсь
-            бегом. Недавно начала кодить. С&nbsp;2015 года работала в&nbsp;компании &laquo;СКБ
-            Контур&raquo;. После того, как прошла курс по&nbsp;веб-разработке, начала заниматься
-            фриланс-заказами и&nbsp;ушла с&nbsp;постоянной работы.
-          </p>
-          <a href='https://github.com/Yanika90' className='about-me__link link'>
-            <p className='about-me__github'>Github</p>
-          </a>
+      <div className='about-me__box'>
+        <h2 className='about-me__header'>Студент</h2>
+        <div className='about-me__container'>
+          <div className='about-me__info-box'>
+            <h3 className='about-me__name'>Яна</h3>
+            <p className='about-me__job'>Фронтенд-разработчик, 32&nbsp;года</p>
+            <p className='about-me__info'>
+              Я&nbsp;родилась и&nbsp;живу в&nbsp;Саратове, закончила факультет экономики СГУ.
+              У&nbsp;меня есть муж и&nbsp;дочь. Я&nbsp;люблю слушать музыку, а&nbsp;ещё увлекаюсь
+              бегом. Недавно начала кодить. С&nbsp;2015 года работала в&nbsp;компании &laquo;СКБ
+              Контур&raquo;. После того, как прошла курс по&nbsp;веб-разработке, начала заниматься
+              фриланс-заказами и&nbsp;ушла с&nbsp;постоянной работы.
+            </p>
+            <a
+              href='https://github.com/Yanika90'
+              className='about-me__link link'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <p className='about-me__github'>Github</p>
+            </a>
+          </div>
+          <img className='about-me__photo' src={StudentPhoto} alt='Фото студента ЯП' />
         </div>
-        <img className='about-me__photo' src={StudentPhoto} alt='Фото студента ЯП' />
+        <Portfolio />
       </div>
-      <Portfolio />
     </section>
   );
 }

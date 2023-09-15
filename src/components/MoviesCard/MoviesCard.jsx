@@ -14,22 +14,26 @@ function MoviesCard() {
 
   return (
     <li
-      className={`movies__movie-card ${
-        location.pathname === '/saved-movies' ? 'movies__movie-card_type_hover' : ''
+      className={`movies-element ${
+        location.pathname === '/saved-movies' ? 'movies-element_type_hover' : ''
       }`}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <img className='movie-card__img' src={MoviesCardImg} alt='Кадр из фильма' />
-      <div className='movie-card__container'>
-        <div className='movie-card__info'>
-          <h3 className='movie-card__title'>33 слова о дизайне</h3>
-          <p className='movie-card__duration'>1ч 47м</p>
+      <img
+        className='movies-element__img'
+        src={MoviesCardImg}
+        alt='Кадр из фильма «33 слова о дизайне»'
+      />
+      <div className='movies-element__container'>
+        <div className='movies-element__info'>
+          <h2 className='movies-element__title'>33 слова о дизайне</h2>
+          <p className='movies-element__duration'>1ч 47м</p>
         </div>
         {location.pathname === '/movies' && (
           <button
-            className={`movie-card__button button ${
-              isSavedMovie ? 'movie-card__button_type_active' : ''
+            className={`movies-element__button button ${
+              isSavedMovie ? 'movies-element__button_type_active' : ''
             }`}
             type='submit'
             aria-label='Сохранить в избранное'
@@ -38,7 +42,7 @@ function MoviesCard() {
         )}
         {location.pathname === '/saved-movies' && isHover && (
           <button
-            className='movie-card__button_type_delete button'
+            className='movies-element__button_type_delete button'
             type='submit'
             aria-label='Удалить из избранного'
           />

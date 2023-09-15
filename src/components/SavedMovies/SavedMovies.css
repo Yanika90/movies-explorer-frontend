@@ -1,11 +1,12 @@
-.movies__divider {
+.page__divider {
   width: 100%;
   height: 140px;
-  margin-top: 97px;
+  padding-top: 97px;
+  background-color: rgba(32, 32, 32, 1);
 }
 
 @media (max-width: 800px) {
-  .movies__divider {
-    margin: 0;
+  .page__divider {
+    padding: 0;
   }
 }

@@ -1,6 +1,15 @@
 .page-not-found {
-  max-width: 400px;
-  margin: 246px auto 60px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(32, 32, 32, 1);
+  color: rgb(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.page-not-found__box {
+  width: 32%;
+  padding: 246px 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,14 +51,16 @@
 }
 
 @media (max-width: 800px) {
-  .page-not-found {
-    margin: 408px auto 222px;
+  .page-not-found__box {
+    width: 52%;
+    padding: 408px 0 222px;
   }
 }
 
 @media (max-width: 400px) {
-  .page-not-found {
-    margin: 329px auto 30px;
+  .page-not-found__box {
+    width: 94%;
+    padding: 329px 0 30px;
   }
 
   .page-not-found__error-type {
