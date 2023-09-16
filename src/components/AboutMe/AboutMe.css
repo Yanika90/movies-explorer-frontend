@@ -14,6 +14,7 @@
 }
 
 .about-me__header {
+  width: 100%;
   margin: 0;
   padding-bottom: 23px;
   font-size: 22px;
@@ -128,7 +129,6 @@
 
   .about-me__header {
     padding-bottom: 28px;
-    max-width: 292px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -137,6 +137,7 @@
     padding: 60px 0 70px;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     gap: 40px;
   }
   .about-me__name {
