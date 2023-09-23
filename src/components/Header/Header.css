@@ -1,0 +1,13 @@
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header_type_deep-blue {
+  background-color: rgba(7, 48, 66, 1);
+}
+
+.header_type_deep-grey {
+  background-color: rgba(32, 32, 32, 1);
+}
