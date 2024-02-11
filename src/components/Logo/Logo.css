@@ -1,0 +1,22 @@
+.logo {
+  width: 38px;
+  height: 38px;
+}
+
+.logo_type_main {
+  padding: 17px 0;
+}
+
+.logo_type_auth {
+  padding-bottom: 40px;
+}
+
+.logo__img {
+  background-size: cover;
+}
+
+@media (max-width: 400px) {
+  .logo_type_auth {
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,97 @@
+.navigation {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__guests {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation__users {
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__movies {
+  display: flex;
+  gap: 16px;
+  padding: 28px 0;
+}
+
+.navigation__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(252, 251, 251);
+  text-decoration: none;
+}
+
+.navigation__link_type_register {
+  padding: 29px 0;
+}
+
+.navigation__login-wrap {
+  margin: 20px 0;
+  width: 76px;
+  height: 32px;
+  border-radius: 3px;
+  background: rgba(61, 220, 132, 1);
+  display: flex;
+}
+
+.navigation__link_type_login {
+  padding: 8px 20px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.navigation__link_type_movies {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.navigation__link_type_active {
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    width: 92%;
+  }
+
+  .navigation__users {
+    width: 67%;
+    visibility: hidden;
+  }
+
+  .navigation__movies {
+    visibility: hidden;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .navigation__guests {
+    gap: 14px;
+  }
+
+  .navigation__link {
+    font-size: 10px;
+  }
+
+  .navigation__login-wrap {
+    margin-top: 24px;
+    width: 54px;
+    height: 26px;
+  }
+
+  .navigation__link_type_login {
+    padding: 5px 12px;
+  }
+}
