@@ -34,7 +34,7 @@ https://www.figma.com/file/6FMWkB94wE7KTkcCgUXtnC/light-1?type=design&node-id=1%
 ---
 
 **Инструкция по установке:**
-1. Клонировать репозиторий `git@github.com:Yanika90/react-mesto-auth.git`
+1. Клонировать репозиторий `git@github.com:Yanika90/movies-explorer-frontend.git`
 2. Перейти в локальную папку с проектом `cd и указать путь`
 3. Уствновить зависимости `npm i`
 4. Запустить сборку `npm start`
