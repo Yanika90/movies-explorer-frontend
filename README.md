@@ -11,6 +11,10 @@
 **Для реализации проекта был выбран макет DARK-3** 👇
 https://www.figma.com/file/6FMWkB94wE7KTkcCgUXtnC/light-1?type=design&node-id=1%3A8436&mode=dev
 
+**[Бекенд]([(https://github.com/Yanika90/movies-explorer-api))**
+**[Финальная сборка проекта](https://github.com/Yanika90/movies-explorer)**
+
+
 ---
 
 **Использованы технологии:**
