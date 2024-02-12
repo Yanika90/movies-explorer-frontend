@@ -14,7 +14,7 @@ https://www.figma.com/file/6FMWkB94wE7KTkcCgUXtnC/light-1?type=design&node-id=1%
 
 ---
 
-**[Бекенд]([(https://github.com/Yanika90/movies-explorer-api))**
+**[Бекенд](https://github.com/Yanika90/movies-explorer-api)**
 
 **[Финальная сборка проекта](https://github.com/Yanika90/movies-explorer)**
 
